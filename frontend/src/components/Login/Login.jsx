@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import styles from "../../styles/styles.js";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -99,6 +100,10 @@ const Login = () => {
                     >
                     Submit
                 </button>
+            </div>
+            <div className={`${styles.normalFlex} w-full`}>
+                <h4>Not have any account?</h4>
+                <Link to="/sign-up" className="text-blue-600 pl-2">Sign Up</Link>
             </div>
           </form>
         </div>
